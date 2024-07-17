@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <br>
-  Red Discord Bot
+  VyperHub
   <br>
 </h1>
 
