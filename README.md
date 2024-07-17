@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Cog-Creators/Red-DiscordBot/tree/V3/develop"><img src="https://imgur.com/a/zEriPzE" alt="Red - Discord Bot"></a>
+  <a href="discord.com"><img src="https://imgur.com/gallery/minecraft-6ZqmBea" alt="Red - Discord Bot"></a>
   <br>
-  VyperHub
+  Red Discord Bot
   <br>
 </h1>
 
