@@ -27,15 +27,15 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
    
 - Certificates: Offering certificates necessary for signing and installing sideloaded apps securely.
    
-- Scripthubs: Access to scripts and tools that enhance the sideloading experience.
+- Scripthub: A gui with hundreds of script on it to enhance gameplay.
 
 - YouTube/Tutorials: Video tutorials explaining various aspects of sideloading and troubleshooting tips.
    
-- DNS Services: Assistance with configuring DNS settings to optimize sideloading performance.
+- DNS Services: We give people the most best, reccomended DNS's to help them sideload.
   
-- Script Discord Server: A Discord community where users can discuss scripts, share tips, and get support.
+- Scripts Discord Server: A Discord community where users can share scripts, and find scripts.
    
-- Private Certificates: Sales of private certificates for users who require additional security and customization.
+- Private Certificates: Sales of private certificates for users who dont want to wait for a working certificate.
    
 - Additional Services: Other services and resources aimed at simplifying and improving the sideloading process.
 
