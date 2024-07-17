@@ -41,7 +41,7 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
 
 # About
 
-**The following text is the reason this github exists:** 
+**Why this github exists:** 
 At VyperHub we are constantly having trouble making a mediafire to share downloads and links, so we are here to make it easier!
 everything you see here will be used.
 
