@@ -23,15 +23,21 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
 
 **What We Offer:**
 
-- Moderation features (kick/ban/softban/hackban, mod-log, filter, chat cleanup)
-- Trivia (lists are included and can be easily added)
-- Music features (YouTube, SoundCloud, local files, playlists, queues)
-- Stream alerts (Twitch, Youtube, Picarto)
-- Bank (slot machine, user credits)
-- Custom commands
-- Imgur/gif search
-- Admin automation (self-role assignment, cross-server announcements, mod-mail reports)
-- Customisable command permissions
+- Website: A dedicated platform providing information, guides, and updates about sideloading.
+   
+- Certificates: Offering certificates necessary for signing and installing sideloaded apps securely.
+   
+- Scripthubs: Access to scripts and tools that enhance the sideloading experience.
+
+- YouTube/Tutorials: Video tutorials explaining various aspects of sideloading and troubleshooting tips.
+   
+- DNS Services: Assistance with configuring DNS settings to optimize sideloading performance.
+  
+- Script Discord Server: A Discord community where users can discuss scripts, share tips, and get support.
+   
+- Private Certificates: Sales of private certificates for users who require additional security and customization.
+   
+- Additional Services: Other services and resources aimed at simplifying and improving the sideloading process.
 
 **Additionally, other [plugins](#plugins) (cogs) can be easily found and added from our growing
 community of cog repositories.**
