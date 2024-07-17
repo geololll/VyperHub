@@ -5,9 +5,9 @@
   •
   <a href="#about">About</a>
   •
-  <a href="https://discord.gg/nyQWZE46Yf">Discord</a>
-  •
   <a href="#join-the-community">Community</a>
+  •
+  <a href="https://discord.gg/nyQWZE46Yf">Discord</a>
 </p>
 
 # Overview
