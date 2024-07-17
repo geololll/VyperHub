@@ -5,11 +5,6 @@
   <br>
 </h1>
 
-  <a href="https://crowdin.com/project/red-discordbot">
-    <img src="https://d322cqt584bo4o.cloudfront.net/red-discordbot/localized.svg" alt="Localized with Crowdin">
-  </a>
-</p>
-
 <p align="center">
   <a href="#overview">Overview</a>
   •
