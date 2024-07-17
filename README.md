@@ -1,5 +1,6 @@
-
-  # VyperHub
+<div style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <h1>VyperHub</h1>
+</div>
 
 <p align="center">
   <a href="#overview">Overview</a>
