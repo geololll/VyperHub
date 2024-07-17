@@ -1,6 +1,6 @@
   <br>
   <br>
-  VyperHub
+  # VyperHub
   <br>
 </h1>
 
