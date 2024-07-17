@@ -47,23 +47,7 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
 
 # Join the community!
 
-**Red** is in continuous development, and it’s supported by an active community which produces new
-content (cogs/plugins) for everyone to enjoy. New features are constantly added. If you can’t
-[find](https://index.discord.red) the cog you’re looking for,
-consult our [guide](https://docs.discord.red/en/stable/guide_cog_creation.html) on
-building your own cogs!
+**VyperHub** is in continuous development, and it’s supported by an active community which produces new
+content for everyone to enjoy!
 
-Join us on our [Official Discord Server](https://discord.gg/red)!
-
-# License
-
-Released under the [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html) license.
-
-Red is named after the main character of "Transistor", a video game by
-[Super Giant Games](https://www.supergiantgames.com/games/transistor/).
-
-Artwork created by [Sinlaire](https://sinlaire.deviantart.com/) on Deviant Art for the Red Discord
-Bot Project.
-
-This project vendors [discord.ext.menus](https://github.com/Rapptz/discord-ext-menus) package made by Danny Y. (Rapptz) which is distributed under MIT License.
-A copy of this license can be found in the [discord-ext-menus.LICENSE](redbot/vendored/discord-ext-menus.LICENSE) file in the [redbot/vendored](redbot/vendored) folder of this repository.
+Join us on our [Official Discord Server](https://discord.gg/nyQWZE46Yf)!
