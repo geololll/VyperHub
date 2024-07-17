@@ -39,36 +39,11 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
    
 - Additional Services: Other services and resources aimed at simplifying and improving the sideloading process.
 
-**Additionally, other [plugins](#plugins) (cogs) can be easily found and added from our growing
-community of cog repositories.**
-
 # Installation
 
-**The following platforms are officially supported:** 
+**The following link will let you download our app:** 
 
-- [Windows](https://docs.discord.red/en/stable/install_guides/windows.html)
-- [MacOS](https://docs.discord.red/en/stable/install_guides/mac.html)
-- [Most major linux distributions](https://docs.discord.red/en/stable/install_guides/index.html)
-
-If after reading the guide you are still experiencing issues, feel free to join the
-[Official Discord Server](https://discord.gg/red) and ask in the **#support** channel for help.
-
-# Plugins
-
-Red is fully modular, allowing you to load and unload plugins of your choice, and install 3rd party
-plugins directly from Discord! A few examples are:
-
-- Cleverbot integration (talk to Red and she talks back)
-- Ban sync
-- Welcome messages
-- Casino
-- Reaction roles
-- Slow Mode
-- AniList
-- And much, much more!
-
-Feel free to take a [peek](https://index.discord.red) at a list of
-available 3rd party cogs!
+- [iOS](https://raw.githubusercontent.com/Gshock3700/VyperHub-App/main/VyperHub.mobileconfig)
 
 # Join the community!
 
