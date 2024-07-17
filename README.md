@@ -19,13 +19,8 @@
 
 # Overview
 
-Red is a fully modular bot – meaning all features and commands can be enabled/disabled to your
-liking, making it completely customizable. This is a *self-hosted bot* – meaning you will need
-to host and maintain your own instance. You can turn Red into an admin bot, music bot, trivia bot,
-new best friend or all of these together!  
-
-[Installation](#installation) is easy, and you do **NOT** need to know anything about coding! Aside
-from installing and updating, every part of the bot can be controlled from within Discord.
+At VyperHub, we are a passionate and dedicated small team specializing in educating individuals on the art of sideloading and jailbreaking iOS devices. Our mission is to empower users to unlock the full potential of their Apple devices, providing them with the knowledge and tools needed to customize and optimize their user experience. Through detailed tutorials, expert guidance, and a supportive community, VyperHub strives to make the process of sideloading and jailbreaking accessible and straightforward for everyone, from beginners to advanced users.
+[Installation](#installation) For our app is very easy all you have to do is head to our discord server and the installation will be in there.
 
 **The default set of modules includes and is not limited to:**
 
