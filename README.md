@@ -3,11 +3,9 @@
 <p align="center">
   <a href="#overview">Overview</a>
   •
-  <a href="#installation">Installation</a>
+  <a href="#about">About</a>
   •
   <a href="https://discord.gg/nyQWZE46Yf">Discord</a>
-  •
-  <a href="#plugins">Plugins</a>
   •
   <a href="#join-the-community">Community</a>
 </p>
