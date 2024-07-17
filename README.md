@@ -21,6 +21,7 @@
 
 At VyperHub, we are a passionate and dedicated small team specializing in educating individuals on the art of sideloading and jailbreaking iOS devices. Our mission is to empower users to unlock the full potential of their Apple devices, providing them with the knowledge and tools needed to customize and optimize their user experience. Through detailed tutorials, expert guidance, and a supportive community, VyperHub strives to make the process of sideloading and jailbreaking accessible and straightforward for everyone, from beginners to advanced users.
 
+
 **What We Offer:**
 
 - Website: A dedicated platform providing information, guides, and updates about sideloading.
