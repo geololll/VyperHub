@@ -1,6 +1,21 @@
-<div style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    <h1>VyperHub</h1>
-</div>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Optional background color */
+}
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+</style>
+
+# Big Text Here
 
 <p align="center">
   <a href="#overview">Overview</a>
