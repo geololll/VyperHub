@@ -10,7 +10,7 @@
   •
   <a href="#installation">Installation</a>
   •
-  <a href="http://docs.discord.red/en/stable/index.html">Documentation</a>
+  <a href="https://discord.gg/nyQWZE46Yf">Discord</a>
   •
   <a href="#plugins">Plugins</a>
   •
