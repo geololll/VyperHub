@@ -15,8 +15,6 @@
   <a href="#plugins">Plugins</a>
   •
   <a href="#join-the-community">Community</a>
-  •
-  <a href="#license">License</a>
 </p>
 
 # Overview
