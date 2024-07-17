@@ -1,6 +1,5 @@
 <h1 align="center">
   <br>
-  <a href="discord.com"><img src="https://imgur.com/KIWSxR0" alt="Red - Discord Bot"></a>
   <br>
   Red Discord Bot
   <br>
