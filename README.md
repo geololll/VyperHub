@@ -20,7 +20,6 @@
 # Overview
 
 At VyperHub, we are a passionate and dedicated small team specializing in educating individuals on the art of sideloading and jailbreaking iOS devices. Our mission is to empower users to unlock the full potential of their Apple devices, providing them with the knowledge and tools needed to customize and optimize their user experience. Through detailed tutorials, expert guidance, and a supportive community, VyperHub strives to make the process of sideloading and jailbreaking accessible and straightforward for everyone, from beginners to advanced users.
-[Installation](#installation) For our app is very easy all you have to do is head to our discord server and the installation will be in there.
 
 **The default set of modules includes and is not limited to:**
 
