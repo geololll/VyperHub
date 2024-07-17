@@ -39,11 +39,11 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
    
 - Additional Services: Other services and resources aimed at simplifying and improving the sideloading process.
 
-# Installation
+# About
 
-**The following link will let you download our app:** 
-
-- [iOS](https://raw.githubusercontent.com/Gshock3700/VyperHub-App/main/VyperHub.mobileconfig)
+**The following text is the reason this github exists:** 
+At VyperHub we are constantly having trouble making a mediafire to share downloads and links, so we are here to make it easier!
+everything you see here will be used.
 
 # Join the community!
 
