@@ -1,8 +1,5 @@
-  <br>
-  <br>
+
   # VyperHub
-  <br>
-</h1>
 
 <p align="center">
   <a href="#overview">Overview</a>
