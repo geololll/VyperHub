@@ -41,9 +41,13 @@ At VyperHub, we are a passionate and dedicated small team specializing in educat
 
 # About
 
-**Why this github exists:** 
-At VyperHub we are constantly having trouble making a mediafire to share downloads and links, so we are here to make it easier!
-everything you see here will be used.
+**Why we created this github:** 
+
+- Ease of Access: We aim to provide a straightforward method for members to download necessary files, scripts, and tools required for sideloading.
+  
+- Organized Sharing: By centralizing our resources here, we ensure that everyone can easily find and access the files they need without confusion.
+  
+- Transparency: We believe in transparency and openness. The GitHub repository allows us to openly share resources, scripts, and contributions from our community members.
 
 # Join the community!
 
