@@ -50,9 +50,9 @@
         </dict>
     </array>
     <key>PayloadDescription</key>
-    <string>10/10</string>
+    <string>DNS Made by @geolol 10/10</string>
     <key>PayloadDisplayName</key>
-    <string>No.. REVOKE~</string>
+    <string>VyperHubs DNS</string>
     <key>PayloadIdentifier</key>
     <string>your.cloudflare.warp.com.profile</string>
     <key>PayloadScope</key>
