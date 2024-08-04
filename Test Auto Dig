@@ -1,0 +1,199 @@
+local Workspace = game:GetService("Workspace")
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local UserInputService = game:GetService("UserInputService")
+local Plr = Players.LocalPlayer
+local ToolCollectEvent = ReplicatedStorage:WaitForChild("Events"):WaitForChild("ToolCollect")
+
+local AutoDigGui = Instance.new("ScreenGui")
+AutoDigGui.Name = "AutoDigGui"
+AutoDigGui.Parent = CoreGui
+
+local BG = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Toggle = Instance.new("TextButton")
+local StatusPF = Instance.new("TextLabel")
+local Status = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+
+AutoDigGui.Name = "AutoDigGui"
+AutoDigGui.Parent = CoreGui
+
+BG.Name = "BG"
+BG.Parent = AutoDigGui
+BG.BackgroundColor3 = Color3.new(1, 0.75, 0.8)  -- Light pink background
+BG.BorderColor3 = Color3.new(1, 0.5, 0.75)  -- Pink border
+BG.BorderSizePixel = 2
+BG.Position = UDim2.new(0.149479166, 0, 0.82087779, 0)
+BG.Size = UDim2.new(0, 210, 0, 127)
+BG.Active = true
+BG.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = BG
+Title.BackgroundColor3 = Color3.new(1, 0.5, 0.75)  -- Pink title background
+Title.BorderColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink border
+Title.BorderSizePixel = 2
+Title.Size = UDim2.new(0, 210, 0, 33)
+Title.Font = Enum.Font.Highway
+Title.Text = "Auto Dig"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.FontSize = Enum.FontSize.Size32
+Title.TextSize = 30
+Title.TextStrokeColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink text stroke
+Title.TextStrokeTransparency = 0
+
+Toggle.Parent = BG
+Toggle.BackgroundColor3 = Color3.new(1, 0.5, 0.75)  -- Pink toggle button background
+Toggle.BorderColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink border
+Toggle.BorderSizePixel = 2
+Toggle.Position = UDim2.new(0.152380958, 0, 0.374192119, 0)
+Toggle.Size = UDim2.new(0, 146, 0, 36)
+Toggle.Font = Enum.Font.Highway
+Toggle.FontSize = Enum.FontSize.Size28
+Toggle.Text = "Start Auto Dig"
+Toggle.TextColor3 = Color3.new(1, 1, 1)
+Toggle.TextSize = 25
+Toggle.TextStrokeColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink text stroke
+Toggle.TextStrokeTransparency = 0
+
+StatusPF.Name = "StatusPF"
+StatusPF.Parent = BG
+StatusPF.BackgroundColor3 = Color3.new(1, 1, 1)
+StatusPF.BackgroundTransparency = 1
+StatusPF.Position = UDim2.new(0.314285725, 0, 0.708661377, 0)
+StatusPF.Size = UDim2.new(0, 56, 0, 20)
+StatusPF.Font = Enum.Font.Highway
+StatusPF.FontSize = Enum.FontSize.Size24
+StatusPF.Text = "Status:"
+StatusPF.TextColor3 = Color3.new(1, 1, 1)
+StatusPF.TextSize = 20
+StatusPF.TextStrokeColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink text stroke
+StatusPF.TextStrokeTransparency = 0
+StatusPF.TextWrapped = true
+
+Status.Name = "Status"
+Status.Parent = BG
+Status.BackgroundColor3 = Color3.new(1, 1, 1)
+Status.BackgroundTransparency = 1
+Status.Position = UDim2.new(0.580952346, 0, 0.708661377, 0)
+Status.Size = UDim2.new(0, 56, 0, 20)
+Status.Font = Enum.Font.Highway
+Status.FontSize = Enum.FontSize.Size14
+Status.Text = "off"
+Status.TextColor3 = Color3.new(1, 0.2, 0.2)  -- Red text when off
+Status.TextScaled = true
+Status.TextSize = 14
+Status.TextStrokeColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink text stroke
+Status.TextWrapped = true
+Status.TextXAlignment = Enum.TextXAlignment.Left
+
+Credit.Name = "Credit"
+Credit.Parent = BG
+Credit.BackgroundColor3 = Color3.new(1, 1, 1)
+Credit.BackgroundTransparency = 1
+Credit.Position = UDim2.new(0.195238099, 0, 0.866141737, 0)
+Credit.Size = UDim2.new(0, 128, 0, 17)
+Credit.Font = Enum.Font.SourceSans
+Credit.FontSize = Enum.FontSize.Size18
+Credit.Text = "Created by geo"
+Credit.TextColor3 = Color3.new(1, 1, 1)
+Credit.TextSize = 16
+Credit.TextStrokeColor3 = Color3.new(0.8, 0.4, 0.6)  -- Darker pink text stroke
+Credit.TextStrokeTransparency = 0
+Credit.TextWrapped = true
+
+-- Variables
+local isDigging = false
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+-- Rainbow border effect
+local function setRainbowBorder()
+    local colors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 127, 0), Color3.fromRGB(255, 255, 0),
+                    Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130),
+                    Color3.fromRGB(148, 0, 211)}
+    local index = 1
+    while BG do
+        BG.BorderColor3 = colors[index]
+        index = index % #colors + 1
+        wait(0.1) -- Adjust the speed of the color change
+    end
+end
+
+spawn(setRainbowBorder) -- Start the rainbow border effect
+
+-- Rainbow text effect
+local function setRainbowText()
+    local colors = {Color3.fromRGB(255, 0, 0), Color3.fromRGB(255, 127, 0), Color3.fromRGB(255, 255, 0),
+                    Color3.fromRGB(0, 255, 0), Color3.fromRGB(0, 0, 255), Color3.fromRGB(75, 0, 130),
+                    Color3.fromRGB(148, 0, 211)}
+    local index = 1
+    while Toggle do
+        Toggle.TextColor3 = colors[index]
+        index = index % #colors + 1
+        wait(0.1) -- Adjust the speed of the color change
+    end
+end
+
+spawn(setRainbowText) -- Start the rainbow text effect
+
+-- Auto-dig function
+local function autoDig()
+    while isDigging do
+        ToolCollectEvent:FireServer()
+        wait(0.1) -- Adjust the wait time if needed
+    end
+end
+
+-- Button Click Event
+Toggle.MouseButton1Click:Connect(function()
+    isDigging = not isDigging
+    if isDigging then
+        Toggle.Text = "Stop Auto Dig"
+        Status.Text = "on"
+        Status.TextColor3 = Color3.new(0, 1, 0)  -- Green text when on
+        autoDig()
+    else
+        Toggle.Text = "Start Auto Dig"
+        Status.Text = "off"
+        Status.TextColor3 = Color3.new(1, 0.2, 0.2)  -- Red text when off
+    end
+end)
+
+-- Make the GUI draggable
+local function update(input)
+    local delta = input.Position - dragStart
+    local newPos = UDim2.new(startPos.X.Scale, math.clamp(startPos.X.Offset + delta.X, 0, CoreGui.AbsoluteSize.X - BG.AbsoluteSize.X),
+                                 startPos.Y.Scale, math.clamp(startPos.Y.Offset + delta.Y, 0, CoreGui.AbsoluteSize.Y - BG.AbsoluteSize.Y))
+    BG.Position = newPos
+end
+
+BG.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = BG.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+BG.InputChanged:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+dragInput = input
+end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+if input == dragInput and dragging then
+update(input)
+end
+end)
